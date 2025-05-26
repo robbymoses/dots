@@ -1,0 +1,21 @@
+{
+    "battery": {
+        "interval": 5,
+        "states": {
+            "good": 100,
+            "okay": 80,
+            "low": 40,
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": {
+            "good": "󱈑",
+            "okay": "󰁿",
+            "low": "󰁽",
+            "warning": "󰁻",
+            "critical": "󰂎",
+            "charging": "󰂄"
+        }
+    }
+}

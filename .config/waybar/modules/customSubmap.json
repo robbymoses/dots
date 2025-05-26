@@ -1,0 +1,7 @@
+{
+    "custom/submap": {
+        "exec": "~/.config/waybar/scripts/submapCheck.sh",
+        "return-type": "text",
+        "interval": 1
+    }
+}

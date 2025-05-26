@@ -1,0 +1,7 @@
+{
+    "wireplumber": {
+        "format": "vol {volume}%",
+        "format-muted": "󰖁",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    }
+}

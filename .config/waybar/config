@@ -2,20 +2,44 @@
   "style": "~/.config/waybar/styles.css",
   "layer": "top",
   "reload_style_on_change": true,
-  "modules-left":["clock", "custom/submap"],
-  "modules-center":["hyprland/workspaces"],
-  "modules-right":["wireplumber","bluetooth","network","battery"],
-  "hyprland/workspaces":{
-    "format": "{icon}",
-    "on-click":"activate",
+  "modules-left": [
+    "clock",
+    "custom/submap"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "wireplumber",
+    "bluetooth",
+    "network",
+    "battery"
+  ],
+  "battery": {
+    "interval": 5,
+    "states": {
+      "good": 100,
+      "okay": 80,
+      "low": 40,
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "{icon} {capacity}%",
     "format-icons": {
-                "active": "",
-                "default": "",
-                "empty": ""
-            },
-    "persistent-workspaces":{
-      "*": [ 1,2,3,4,5,6]
+      "good": "󱈑",
+      "okay": "󰁿",
+      "low": "󰁽",
+      "warning": "󰁻",
+      "critical": "󰂎",
+      "charging": "󰂄"
     }
+  },
+  "bluetooth": {
+    "format-on": "󰂯",
+    "format-connected": "",
+    "tooltip-format": "{device_alias}",
+    "format-disabled": "󰂲",
+    "on-click-right": "blueman-manager"
   },
   "clock": {
     "format": "{:%H:%M · %a %B %d}",
@@ -34,49 +58,46 @@
       }
     }
   },
+  "cpu": {
+    "interval": 1,
+    "format": "{usage}%"
+  },
+  "custom/submap": {
+    "exec": "~/.config/waybar/scripts/submapCheck.sh",
+    "return-type": "text",
+    "interval": 1
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "active": "",
+      "default": "",
+      "empty": ""
+    },
+    "persistent-workspaces": {
+      "*": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
   "network": {
     "format-wifi": "",
-    "format-ethernet":"",
+    "format-ethernet": "",
     "format-disconnected": "",
     "tooltip-format-disconnected": "Error",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
     "tooltip-format-ethernet": "{ifname} 🖧 ",
     "on-click": "kitty nmtui"
   },
-  "bluetooth": {
-      "format-on": "󰂯",
-      "format-connected": "",
-      "tooltip-format": "{device_alias}",
-      "format-disabled": "󰂲",
-      "on-click-right": "blueman-manager"
-  }, 
-  "battery": {
-    "interval": 5,
-    "states": {
-      "good": 100,   // 81% - 100%
-      "okay": 80,    // 41% - 80%
-      "low":40,      // 21% - 40%
-      "warning": 20, // 11% - 20%
-      "critical": 10 // >10%
-    },
-    "format": "{icon} {capacity}%",
-    "format-icons": {
-      "good": "󱈑",
-      "okay":"󰁿",
-      "low":"󰁽",
-      "warning": "󰁻",
-      "critical": "󰂎",
-      "charging": "󰂄"
-    }
-  },
   "wireplumber": {
     "format": "vol {volume}%",
     "format-muted": "󰖁",
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-  },
-  "custom/submap": {
-    "exec": "~/.config/waybar/scripts/submapCheck.sh",
-    "return-type": "text",
-    "interval": 1
   }
 }
