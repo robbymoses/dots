@@ -4,7 +4,7 @@
   "reload_style_on_change": true,
   "modules-left": [
     "clock",
-    "custom/submap"
+    "hyprland/submap"
   ],
   "modules-center": [
     "hyprland/workspaces"
@@ -58,19 +58,14 @@
       }
     }
   },
-  "custom/submap": {
-    "exec": "~/.config/waybar/scripts/submapCheck.sh",
-    "return-type": "text",
+  "hyprland/submap": {
+    "format": "Submap: {}",
+    "format-alt": "",
     "interval": 1
   },
   "hyprland/workspaces": {
-    "format": "{icon}",
+    "format": "{name}",
     "on-click": "activate",
-    "format-icons": {
-      "active": "",
-      "default": "",
-      "empty": ""
-    },
     "persistent-workspaces": {
       "*": [
         1,

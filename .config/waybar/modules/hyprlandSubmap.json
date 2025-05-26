@@ -1,0 +1,8 @@
+{
+    "hyprland/submap": {
+        "format": "Submap: {}",
+        "format-alt": "No active submap",
+        "format-alt": "",
+        "interval": 1
+    }
+}
