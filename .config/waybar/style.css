@@ -10,25 +10,13 @@ window#waybar{
     all:unset;
 }
 
-/* .modules-left {
+.modules-left {
     padding:7px;
     margin:10px 0px 5px 10px;
     border-radius:10px;
     background: alpha(@primary_container,.6);
     box-shadow: 0px 0px 3px alpha(@outline, .6);
-} */
-
-.modules-left > * {
-    background: alpha(@primary_container, 0.6);
-    border-radius: 10px;
-    margin-top: 10px;
-    padding:7px;
-    box-shadow: 0 0 3px alpha(@outline, 0.6);
-    margin-right: 10px; /* space between boxes */
-    min-width: 120px; /* or adjust to fit content */
-    color: @on_primary_container;
-}
-
+} 
 .modules-center {
     padding:7px;
     margin:10px 0px 5px 0px;
