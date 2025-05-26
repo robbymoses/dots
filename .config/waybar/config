@@ -1,0 +1,82 @@
+{
+  "style": "~/.config/waybar/styles.css",
+  "layer": "top",
+  "reload_style_on_change": true,
+  "modules-left":["clock", "custom/submap"],
+  "modules-center":["hyprland/workspaces"],
+  "modules-right":["wireplumber","bluetooth","network","battery"],
+  "hyprland/workspaces":{
+    "format": "{icon}",
+    "on-click":"activate",
+    "format-icons": {
+                "active": "",
+                "default": "",
+                "empty": ""
+            },
+    "persistent-workspaces":{
+      "*": [ 1,2,3,4,5,6]
+    }
+  },
+  "clock": {
+    "format": "{:%H:%M · %a %B %d}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+  "network": {
+    "format-wifi": "",
+    "format-ethernet":"",
+    "format-disconnected": "",
+    "tooltip-format-disconnected": "Error",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname} 🖧 ",
+    "on-click": "kitty nmtui"
+  },
+  "bluetooth": {
+      "format-on": "󰂯",
+      "format-connected": "",
+      "tooltip-format": "{device_alias}",
+      "format-disabled": "󰂲",
+      "on-click-right": "blueman-manager"
+  }, 
+  "battery": {
+    "interval": 5,
+    "states": {
+      "good": 100,   // 81% - 100%
+      "okay": 80,    // 41% - 80%
+      "low":40,      // 21% - 40%
+      "warning": 20, // 11% - 20%
+      "critical": 10 // >10%
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": {
+      "good": "󱈑",
+      "okay":"󰁿",
+      "low":"󰁽",
+      "warning": "󰁻",
+      "critical": "󰂎",
+      "charging": "󰂄"
+    }
+  },
+  "wireplumber": {
+    "format": "vol {volume}%",
+    "format-muted": "󰖁",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+  "custom/submap": {
+    "exec": "~/.config/waybar/scripts/submapCheck.sh",
+    "return-type": "text",
+    "interval": 1
+  }
+}

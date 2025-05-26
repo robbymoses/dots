@@ -1,0 +1,103 @@
+@import url("colors.css");
+
+* {
+    font-size:15px;
+    font-family: "FiraCode Nerd Font Propo";
+}
+
+window#waybar{
+    all:unset;
+}
+
+.modules-left {
+    padding:7px;
+    margin:10 0 5 10;
+    border-radius:10px;
+    background: alpha(@background,.6);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+.modules-center {
+    padding:7px;
+    margin:10 0 5 0;
+    border-radius:10px;
+    background: alpha(@background,.6);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+.modules-right {
+    padding:7px;
+    margin: 10 10 5 0;
+    border-radius:10px;
+    background: alpha(@background,.6);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+/* 
+================================
+BLUETOOTH MODULE STYLING
+================================ 
+*/
+#bluetooth{
+    padding: 0px 10px;
+    transition: all .3s ease;
+}
+
+#bluetooth.on {
+    color:#1E90FF; /* Enabled but 0 Connections */
+}
+#bluetooth.connected {
+    color:#00FF00; /* Connected Devices */
+}
+#bluetooth.disabled {
+    color:#808080; /* Bluetooth Disabled */
+}
+
+/*
+================================
+NETWORK MODULE STYLING
+================================ 
+*/
+#network{
+    padding: 0px 10px;
+    transition: all .3s ease;
+    color: #808080
+}
+#network.wifi,
+#network.ethernet{
+    color:#00FF00;
+}
+#network.disconnected{
+    color:#FF0000;
+}
+
+/* 
+================================
+BATTERY MODULE STYLING
+================================ 
+*/
+#battery{
+    padding: 0px 10px;
+    transition: all .3s ease;
+    color:#00FF00;
+}
+
+#battery.charging {
+    color: #FFFF00;
+}
+
+#battery.okay:not(.charging) {
+	color:#7FFF00
+}
+#battery.low:not(.charging){
+	color:#FFA500
+}
+#battery.warning:not(.charging) {
+    color:#FF4500;
+}
+
+#battery.critical:not(.charging) {
+    color: #FF0000;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
