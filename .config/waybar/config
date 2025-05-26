@@ -58,10 +58,6 @@
       }
     }
   },
-  "cpu": {
-    "interval": 1,
-    "format": "{usage}%"
-  },
   "custom/submap": {
     "exec": "~/.config/waybar/scripts/submapCheck.sh",
     "return-type": "text",
