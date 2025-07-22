@@ -1,0 +1,55 @@
+{
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "theme.bar.buttons.windowtitle.enableBorder": false,
+  "bar.windowtitle.class_name": true,
+  "scalingPriority": "hyprland",
+  "bar.workspaces.workspaces": 4,
+  "bar.launcher.icon": "",
+  "bar.launcher.autoDetectIcon": true,
+  "theme.bar.menus.menu.dashboard.confirmation_scaling": 75,
+  "bar.workspaces.monitorSpecific": true,
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.workspaceMask": false,
+  "theme.bar.location": "top",
+  "theme.bar.floating": true,
+  "bar.autoHide": "never",
+  "bar.workspaces.showWsIcons": false,
+  "bar.layouts": {
+    "*": {
+      "left": [
+        "dashboard",
+        "media"
+      ],
+      "middle": [
+        "workspaces",
+        "windowtitle"
+      ],
+      "right": [
+        "volume",
+        "network",
+        "bluetooth",
+        "battery",
+        "systray",
+        "clock",
+        "notifications"
+      ]
+    },
+    "eDP-1": {
+      "extends": "*",
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "menus.clock.time.hideSeconds": true,
+  "menus.clock.weather.enabled": false,
+  "menus.clock.time.military": false,
+  "bar.clock.format": "%a %b %d  %I:%M",
+  "bar.clock.showTime": true,
+  "bar.media.rightClick": ""
+}

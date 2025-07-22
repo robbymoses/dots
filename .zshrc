@@ -15,14 +15,23 @@
   unsetopt PROMPT_SP
 
 ### PATH
-  #path = (
-  
-  #) # Add Items to path Here
+  typeset -U path
+
+  path=("${(s/:/)PATH}")
+
+  path+=(
+  "$HOME/.npm_modules/bin"
+  )
+
+  export PATH="${(j.:.)path}"
+  #path=(
+  #  "$HOME/.npm_modules/bin"
+  #)
   # Remove any duplicates and non-existent entries
   #typeset -U path
   #path=($^path(N-/))
 
-  #export PATH
+  #export PATH="${(j.:.)path}"
 
 ### HISTORY
 HISTFILE="$XDG_CACHE_HOME/zsh_history"
@@ -36,7 +45,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 
 ### Evals
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 ### Plugins
 # Set the directory we want to store zinit and plugins
