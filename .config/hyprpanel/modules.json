@@ -1,1 +1,21 @@
-{}
+{
+    "custom/volume": {
+        "icon": ["󰕿", "󰖀", "󰕾"],
+        "label": "{percentage}%",
+        "tooltip": "Current Volume: {percentage}%",
+        "truncationSize": -1,
+        "interval": 1000,
+        "scrollThreshold": 1,
+        "actions": {
+            "onLeftClick": "menu:audio",
+            "onRightClick": "",
+            "onMiddleClick": "",
+            "onScrollUp": "hyprpanel vol +5",
+            "onScrollDown": "hyprpanel vol -5"
+        }
+    },
+    "custom/power": {
+      "icon" : [],
+      "label": "power"
+    }
+}
