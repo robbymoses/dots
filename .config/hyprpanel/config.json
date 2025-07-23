@@ -18,7 +18,7 @@
     "*": {
       "left": [
         "dashboard",
-        "media"
+        "cava"
       ],
       "middle": [
         "workspaces",
@@ -37,7 +37,7 @@
       "extends": "*",
       "right": [
         "volume",
-	"battery",
+        "battery",
         "clock",
         "notifications"
       ]
@@ -435,5 +435,10 @@
   "bar.customModules.storage.paths": [
     "/"
   ],
-  "notifications.position": "top right"
+  "notifications.position": "top right",
+  "theme.bar.buttons.modules.cava.enableBorder": false,
+  "bar.customModules.cava.leftClick": "menu:media",
+  "bar.customModules.cava.stereo": false,
+  "bar.customModules.cava.showActiveOnly": true,
+  "bar.customModules.cava.showIcon": false
 }
