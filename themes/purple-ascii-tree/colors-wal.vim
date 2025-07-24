@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/rmoses/dots/themes/purple-ascii-tree/wallpaper.png"
+let background = "#1e1e0c"
+let foreground = "#c6c6c2"
+let cursor     = "#c6c6c2"
+
+" Colors
+let color0  = "#1e1e0c"
+let color1  = "#3D445A"
+let color2  = "#484C71"
+let color3  = "#553E86"
+let color4  = "#5E569B"
+let color5  = "#686EB1"
+let color6  = "#766ACB"
+let color7  = "#c6c6c2"
+let color8  = "#70705c"
+let color9  = "#3D445A"
+let color10 = "#484C71"
+let color11 = "#553E86"
+let color12 = "#5E569B"
+let color13 = "#686EB1"
+let color14 = "#766ACB"
+let color15 = "#c6c6c2"

@@ -1,0 +1,59 @@
+@import "./colors.rasi"
+
+* {
+    font: "JetBrainsMono Nerd Font 12";
+    border-radius: 8px;
+    padding: 6px;
+
+    background-color: @surface;
+    text-color: @on-surface;
+}
+window {
+    background-color: @surface-container;
+   // border: 2px solid @outline-variant;
+    border-radius: 12px;
+    padding: 10px;
+}
+inputbar {
+    //background-color: @surface-container-high;
+    //border: 2px solid @outline-variant;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+prompt {
+    //text-color: @primary;
+    padding: 0 6px;
+}
+
+entry {
+    //text-color: @on-surface;
+    background-color: transparent;
+    expand: true;
+}
+
+listview {
+    //background-color: @surface-container;
+    border: 0;
+    spacing: 5px;
+    scrollbar: true;
+    fixed-height: false;
+    dynamic: true;
+}
+
+element {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: transparent;
+    //text-color: @on-surface;
+}
+
+element selected {
+    background-color: @primary-container;
+    //text-color: @on-primary-container;
+}
+
+element-text {
+    text-color: inherit;
+    //highlight: @primary-fixed;
+}

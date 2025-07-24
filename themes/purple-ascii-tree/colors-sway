@@ -1,0 +1,21 @@
+set $wallpaper /home/rmoses/dots/themes/purple-ascii-tree/wallpaper.png
+
+set $background #1e1e0c
+set $foreground #c6c6c2
+
+set $color0 #1e1e0c
+set $color1 #3D445A
+set $color2 #484C71
+set $color3 #553E86
+set $color4 #5E569B
+set $color5 #686EB1
+set $color6 #766ACB
+set $color7 #c6c6c2
+set $color8 #70705c
+set $color9 #3D445A
+set $color10 #484C71
+set $color11 #553E86
+set $color12 #5E569B
+set $color13 #686EB1
+set $color14 #766ACB
+set $color15 #c6c6c2

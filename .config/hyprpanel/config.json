@@ -28,7 +28,6 @@
         "volume",
         "bluetooth",
         "battery",
-        "systray",
         "clock",
         "notifications"
       ]
@@ -440,5 +439,14 @@
   "bar.customModules.cava.leftClick": "menu:media",
   "bar.customModules.cava.stereo": false,
   "bar.customModules.cava.showActiveOnly": true,
-  "bar.customModules.cava.showIcon": false
+  "bar.customModules.cava.showIcon": false,
+  "wallpaper.pywal": false,
+  "wallpaper.image": "/home/rmoses/dots/themes/summer-night/wallpaper.png",
+  "theme.bar.menus.monochrome": false,
+  "theme.matugen": true,
+  "theme.matugen_settings.mode": "dark",
+  "theme.matugen_settings.scheme_type": "fidelity",
+  "theme.matugen_settings.variation": "standard_1",
+  "wallpaper.enable": true,
+  "theme.bar.menus.menu.dashboard.profile.size": "8.5em"
 }

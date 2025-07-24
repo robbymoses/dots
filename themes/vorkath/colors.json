@@ -1,0 +1,29 @@
+{
+    "checksum": "ece6f79663f7da3b04f0d7ff6cdf03d0",
+    "wallpaper": "/home/rmoses/dots/themes/vorkath/wallpaper.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#131920",
+        "foreground": "#c4c5c7",
+        "cursor": "#c4c5c7"
+    },
+    "colors": {
+        "color0": "#131920",
+        "color1": "#2472aa",
+        "color2": "#2c7bad",
+        "color3": "#4e87a6",
+        "color4": "#3981af",
+        "color5": "#5691af",
+        "color6": "#6c8087",
+        "color7": "#91979c",
+        "color8": "#5e6874",
+        "color9": "#3099E3",
+        "color10": "#3BA5E7",
+        "color11": "#69B5DE",
+        "color12": "#4CADEA",
+        "color13": "#73C2EA",
+        "color14": "#91ABB4",
+        "color15": "#c4c5c7"
+    }
+}
