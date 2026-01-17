@@ -29,6 +29,7 @@
         "bluetooth",
         "battery",
         "clock",
+        "network",
         "notifications"
       ]
     },
