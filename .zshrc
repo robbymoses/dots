@@ -1,4 +1,6 @@
 # Source .zprofile if it hasn't been sourced yet
+  zmodload zsh/zprof
+
   if [[ -z "$ZPROFILE_SOURCED" ]]; then
     export ZDOTDIR="$HOME/.config/zsh"
     source $ZDOTDIR/.zprofile
@@ -61,3 +63,7 @@ zstyle ':completion:*' menu no
   source "${ZINIT_HOME}/zinit.zsh"
 
   zinit light zsh-users/zsh-syntax-highlighting
+
+  zprof > /tmp/zprof
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"

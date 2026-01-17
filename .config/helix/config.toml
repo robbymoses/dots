@@ -2,7 +2,7 @@ theme = "dracula"
 
 [editor]
 line-number = "relative"
-
+bufferline = "always"
 [editor.cursor-shape]
 insert = "bar"
 

@@ -2,7 +2,7 @@
     "custom/volume": {
         "icon": ["󰕿", "󰖀", "󰕾"],
         "label": "{percentage}%",
-        "tooltip": "Current Volume: {percentage}%",
+        "tooltip": "Current Volume: {percentage}",
         "truncationSize": -1,
         "interval": 1000,
         "scrollThreshold": 1,

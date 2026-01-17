@@ -1,3 +1,4 @@
+include ./colors-kitty.conf
 # Font
 font_family      JetBrainsMono NF Medium
 bold_font        auto
@@ -54,6 +55,6 @@ window_alert_on_bell no
 
 
 # BEGIN_KITTY_THEME
-# GitHub Dark
+# Aquarium Light
 include current-theme.conf
 # END_KITTY_THEME
